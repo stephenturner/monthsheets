@@ -1,0 +1,16 @@
+---
+format: pdf
+geometry: "left=1in, right=1in, top=0.75in, bottom=0.75in"
+fontsize: 10pt
+header-includes:
+    - \usepackage{setspace}\doublespacing
+---
+
+\pagenumbering{gobble}
+
+```{r, code=readLines("monthsheets.R")}
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+#| results: 'asis'
+```
